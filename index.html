@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX</title>
+</head>
+    <body>
+        <script src="frontend.js"></script>
+        <div class="header">
+            <header>
+                <div class="text-logo"><span style="color: rgb(7, 7, 155);">Dev</span><span style="font-family:'Montserrat', sans-serif; font-weight: 700;">superior</span></div>
+                <tr class="a-text"><a class="style-a" href="">Catalog</a></tr>
+                <tr class="a-text"><a class="style-a" href="">About</a></tr>
+                <tr class="a-text"><a class="style-a" href="">Features</a></tr>
+                <tr class="button-login"><button class="style-login">Login</button></tr>
+                <tr><button class="style-cart"><i class="bi bi-bag-fill"></i></button></tr>
+            </header>
+        </div>
+            <div class="container">
+                <div id="fade" class="hide"></div>
+                <div id="modal" class="hide">
+                    <div class="modal-header">
+                        <button id="close-modal">Fechar</button>
+                            <h1>Login</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form action="http://localhost:5500/verificarLogin" id="login" method="get">
+                            <label class="label-style" for="nomecad">User</label>
+                                <input class="input-style" type="text" name="nomecad" id="nomecad">
+                            <label class="label-style" for="password">Password</label>
+                                <input class="input-style" type="password" name="senhacad" id="senhacad">
+                            <div class="content-login">
+                                <input type="checkbox"><p>Forgot password</p>
+                            </div>
+                            <div class="cadastro">
+                                <a href="cadastro.html">sign up here</a>
+                            </div>
+                            <button class="button-login">Login</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="fade-cart" class="hide-cart"></div>
+                <div id="modal-cart" class="hide-cart">
+                    <div class="cart-header">
+                        <button id="close-cart">Fechar</button>
+                            <h1>Carrinho</h1>
+                    </div>
+                    <div class="cart-body">
+                        <form action="script.js" method="post">
+                            <div class="masterCart">
+                                <div class="img-cart"><img src="images/3.png" height="200px" width="300px" alt=""></div>
+                                <div class="text-car-description"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem a tenetur porro aut quidem consectetur possimus.</p><br>
+                                <h2>Toyota 2017 V2 2023</h2>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+                <div class="positionCar">
+                    <div class="tableCar">
+                        <div class="text-car">
+                            <h1>The perfect car for you</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit aperiam illum architecto soluta doloribus porro fuga nisi a nam, odio vel adipisci?</p>
+                        </div>
+                        <div class="img-car">
+                            <img src="images/1.png" height="250px" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="carProducts">
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="https://th.bing.com/th/id/R.d8ca7b070e5cf45c252309e8bc045327?rik=8x7p3xVEuwI83Q&pid=ImgRaw&r=0" height="150px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/2.png" height="150px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/3.png" height="150px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/4.png" style="margin-top: 30px;" height="120px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/5.png" height="150px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/6.png" height="150px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/7.png" height="150px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/8.png" style="margin-top: 30px;" height="120px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                    <div class="card-car">
+                        <div class="card-img">
+                            <img src="images/9.png"  height="150px" alt="">
+                        </div>
+                        <div class="text-card">
+                            <h3>Audi Supra TT</h3>
+                            <p>$399,000,00</p>
+                        </div>
+                        <div class="button-card">
+                            <button>Get now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-arrow">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+                </svg>
+            </div>
+            
+            <footer class="main_footer container">
+                
+                <div class="content">
+                    
+                    <div class="colfooter">
+                        
+                        <h4 class="titleFooter"> Menu</h4>
+                        
+                        <ul>
+                        
+                          <li><a href="#" title="Página Inícial">Página Inícial</a></li>
+                          <li><a href="#" title="Sobre a Empresa">Sobre a Empresa</a></li>
+                          <li><a href="#" title="Galeria de Fotos">Galeria de Fotos</a></li>
+                          <li><a href="#" title="Fale Conosco">Fale Conosco</a></li>
+                        
+                        </ul>
+                    
+                    </div><!--Col Footer 1-->        
+                    
+                    <div class="colfooter">
+                       
+                       <h4 class="titleFooter">Contato</h4>
+                       <p><i class="icon icon-mail"></i> contato@seusite.com.br</p>
+                       <p><i class="icon icon-phone"></i> 21 90000-0000</p>
+                       <p><i class="icon icon-whatsapp"></i> 21 90000-0000</p>
+                    
+                    </div><!--Col Footer 2-->
+                    
+                    <div class="colfooter">
+                       
+                        <h4 class="titleFooter"> Redes Sociais</h4>
+                        
+                        <a href="#" class="redesocial"><span> <i class="icon icon-facebook"></i>/nomegusta</span></a>            
+                        <a href="#" class="redesocial"><span> <i class="icon icon-instagram"></i>/nomegusta.blog</span></a>            
+                        <a href="#" class="redesocial"><span> <i class="icon icon-twitter"></i>/nomegusta</span></a>            
+                        <a href="#" class="redesocial"><span> <i class="icon icon-pinterest"></i>/nomegusta</span></a>  
+                    
+                    </form>
+                    
+                    </div><!--Col Footer 3-->
+                    
+                    <div class="clear"></div>
+                
+                </div><!--Contant-->
+                
+                <div class="main_footer_copy">
+                    
+                    <p class="m-b-footer">2023, todos os direitos reservados.</p> 
+                    <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="#" title="Loop Nerd">Nomegusta</a></p>
+                
+                </div>
+            </footer>
+                <script src="script.js"></script>
+                <script src="server.js"></script>  
+    </body>
+</html>
